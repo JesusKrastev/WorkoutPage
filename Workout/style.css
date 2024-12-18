@@ -1,0 +1,178 @@
+/* Poppins Black */
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+/* Poppins Bold */
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Poppins ExtraBold */
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+/* Poppins ExtraLight */
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+/* Poppins Light */
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* Poppins Medium */
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* Poppins Regular */
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Poppins SemiBold */
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+html, body {
+    margin: 0;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+h1 {
+    font-family: 'Poppins';
+    font-weight: 800;
+}
+
+.hero__background {
+    background-image: url('images/hero-background.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:auto;
+    height: 80vh;
+}
+
+.section-1 {
+    position: relative;
+    background-image: url('images/telefono-1.png');
+    background-position:bottom right;
+    background-repeat: no-repeat;
+    background-size:contain;
+}
+
+.section-1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+    border-radius: inherit;
+}
+
+.section-1 > * {
+    position: relative;
+    z-index: 2;
+}
+
+.section-2 {
+    background-image: url('images/telefono-2.png');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.section-3 {
+    position: relative;
+    background-image: url('images/telefono-3.png');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.section-3::before {
+    
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+    border-radius: inherit;
+}
+
+.section-3 > * {
+    position: relative;
+    z-index: 2;
+}
+
+.imagen-4 {
+    width: 75%;
+    height: auto;
+    object-fit: cover;
+}
+
+.section-4 {
+    position: relative;
+    background-image: url('images/dos_telefono.png');
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.section-4::before {
+    
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+    border-radius: inherit;
+}
+
+.section-4 > * {
+    position: relative;
+    z-index: 2;
+}
+
+@media (max-width: 768px) {
+    .section-4 {
+        background-size: cover;
+    }
+}
