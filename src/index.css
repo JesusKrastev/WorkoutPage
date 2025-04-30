@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-theme-background-light: #f3f8f3; /* Blanco ligeramente verdoso */
+  --color-theme-background-dark: #000000; /* Verde-negruzco, muy oscuro */
+
+  --color-theme-surface-light: #ffffff; /* Superficies blancas claras */
+  --color-theme-surface-dark: #2c2c2c; /* Verde muy oscuro para cards, modales */
+
+  --color-theme-text-primary-light: #0a210a; /* Casi negro pero verdoso */
+  --color-theme-text-primary-dark: #f0f9f0; /* Blanco verdoso para dark */
+
+  --color-theme-text-secondary-light: #5b6e5b; /* Gris verdoso */
+  --color-theme-text-secondary-dark: #c2c2c2; /* Verde-gris claro */
+
+  --color-theme-border-light: #cce0cc; /* Verde pálido, más visible */
+  --color-theme-border-dark: #355235; /* Verde más saturado para dark */
+
+  --color-theme-primary-light: #007a33; /* Verde intenso, mejor contraste */
+  --color-theme-primary-dark: #00b347; /* Verde más vibrante para hover o dark */
+
+  --color-theme-primary-hover-light: #005b26; /* Hover en light mode */
+  --color-theme-primary-hover-dark: #00d25f; /* Hover en dark mode */
+
+  --color-theme-secondary-light: #91a891; /* Verde-gris medio, más saturado */
+  --color-theme-secondary-dark: #4b604b; /* Gris verdoso oscuro */
+
+  --color-theme-secondary-hover-light: #7b957b; /* Más oscuro en hover */
+  --color-theme-secondary-hover-dark: #5f7a5f;
+
+  --color-theme-input-light: #f6fdf6; /* Más limpio que el background */
+  --color-theme-input-dark: #142414; /* Oscuro y uniforme para inputs */
+
+  --color-theme-input-border-light: #a6c8a6; /* Borde verde pastel */
+  --color-theme-input-border-dark: #3d5e3d; /* Borde dark */
+
+  --color-theme-input-border-error: #ef4444; /* Rojo para errores */
+
+  --color-theme-input-border-focus-light: #00a34f; /* Verde más vivo para focus */
+  --color-theme-input-border-focus-dark: #00d25f;
+}
