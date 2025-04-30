@@ -8,16 +8,24 @@ import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
-    <footer className="w-full flex justify-center items-center pt-4">
+    <footer className="w-full flex justify-center items-center pt-4 px-4 flex-wrap border-0 border-t-1">
       <div className="w-full max-w-5xl flex justify-between items-center">
         <div className="text-theme-text-secondary-light dark:text-theme-text-secondary-dark font-semibold">
           © 2025 Workout
         </div>
         <div className="flex gap-4 font-semibold text-theme-text-secondary-light dark:text-theme-text-secondary-dark">
-          <Link to={getRouteByName("privacy_policy")}>
+          <Link
+            to={getRouteByName("privacy_policy")}
+            className="hover:text-theme-text-primary-light hover:dark:text-theme-text-primary-dark transition-colors"
+          >
             Politica de privacidad
           </Link>
-          <Link to={getRouteByName("user_terms")}>Términos y condiciones</Link>
+          <Link
+            to={getRouteByName("user_terms")}
+            className="hover:text-theme-text-primary-light hover:dark:text-theme-text-primary-dark transition-colors"
+          >
+            Términos y condiciones
+          </Link>
         </div>
         <SocialBanner />
       </div>
