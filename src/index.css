@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-theme-background-light: #f3f8f3;
+  --color-theme-background-dark: #000000;
+
+  --color-theme-surface-light: #ffffff;
+  --color-theme-surface-dark: #2c2c2c;
+
+  --color-theme-text-primary-light: #0a210a;
+  --color-theme-text-primary-dark: #f0f9f0;
+
+  --color-theme-text-secondary-light: #5b6e5b;
+  --color-theme-text-secondary-dark: #c2c2c2;
+
+  --color-theme-border-light: #cce0cc;
+  --color-theme-border-dark: #355235;
+
+  --color-theme-primary-light: #007a33;
+  --color-theme-primary-dark: #00b347;
+
+  --color-theme-primary-hover-light: #005b26;
+  --color-theme-primary-hover-dark: #00d25f;
+
+  --color-theme-secondary-light: #91a891;
+  --color-theme-secondary-dark: #4b604b;
+
+  --color-theme-secondary-hover-light: #7b957b;
+  --color-theme-secondary-hover-dark: #5f7a5f;
+
+  --color-theme-input-light: #f6fdf6;
+  --color-theme-input-dark: #142414;
+
+  --color-theme-input-border-light: #a6c8a6;
+  --color-theme-input-border-dark: #3d5e3d;
+
+  --color-theme-input-border-error: #ef4444;
+
+  --color-theme-input-border-focus-light: #00a34f;
+  --color-theme-input-border-focus-dark: #00d25f;
+}
